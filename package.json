@@ -6,14 +6,15 @@
     "scripts": {
         "start": "functions-framework --source=build/src/ --target=cloudAuthenticator",
         "watch": "concurrently \"tsc -w\" \"nodemon --watch ./build/ --exec npm run start\"",
-        "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "gts lint",
-        "clean": "gts clean",
-        "compile": "tsc",
         "fix": "gts fix",
-        "prepare": "npm run compile",
-        "pretest": "npm run compile",
-        "posttest": "npm run lint"
+        "compile": "tsc",
+        "clean": "gts clean",
+        "posttest": "npm run lint",
+        "encrypt:env": "./scripts/encrypt.env.sh $1 $2",
+        "decrypt:env": "./scripts/decrypt.env.sh $1 $2",
+        "encrypt:staging": "./scripts/encrypt.staging.sh $1 $2",
+        "decrypt:staging": "./scripts/decrypt.staging.sh $1 $2"
     },
     "keywords": [
         "Cloud",

@@ -40,3 +40,4 @@ lerna-debug.log*
 *env.*
 !.env.example
 env.example
+*staging.json

@@ -24,6 +24,7 @@ To deploy a single function to `gcloud` run:
 ```bash
 $ gcloud functions deploy $FUNCTION_NAME \
 --runtime nodejs16 \
---trigger-http
---region us-central1
+--trigger-http \
+--region us-central1 \
+--source build/src/
 ```

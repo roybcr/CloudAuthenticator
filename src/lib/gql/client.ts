@@ -1,7 +1,7 @@
 import { GraphQLClient } from 'graphql-request';
-import Config from '../../config/config';
+import { config } from '../../config';
 
-const { BACKEND_URL, GRAPHQL_KEY } = Config();
+const { BACKEND_URL, GRAPHQL_KEY } = config();
 
 const headers = (token: string) => ({
     authorization: `Bearer ${token}`
