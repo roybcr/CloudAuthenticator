@@ -1,0 +1,9 @@
+query GetUserByPhoneQuery($phone: String!) {
+    userByPhone(phone: $phone) {
+        uid
+        name
+        email
+        phone
+        role
+    }
+}
