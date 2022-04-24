@@ -11,8 +11,8 @@
         "compile": "tsc",
         "clean": "gts clean",
         "posttest": "npm run lint",
-        "encrypt:env": "./scripts/encrypt.env.sh $1 $2",
-        "decrypt:env": "./scripts/decrypt.env.sh $1 $2",
+        "encrypt:env": "./scripts/encrypt-env.sh $1 $2",
+        "decrypt:env": "./scripts/decrypt-env.sh $1 $2",
         "encrypt:staging": "./scripts/encrypt.staging.sh $1 $2",
         "decrypt:staging": "./scripts/decrypt.staging.sh $1 $2"
     },
